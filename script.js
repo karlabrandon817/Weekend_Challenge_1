@@ -1,5 +1,3 @@
-console.log('test script');
-
 var employeeArray = [];
 
 var newEmp = function (first, last, id, title, salary){
@@ -8,11 +6,11 @@ var newEmp = function (first, last, id, title, salary){
     last: last,
     id: id,
     title: title,
-    salary: salary
-  };
+    salary: salary};
   employeeArray.push(addEmpInfo);
   console.log(employeeArray);
 };
+
 
 var userInput = function () {
 var firstName = document.getElementById('firstName').value;
@@ -27,8 +25,13 @@ var annualSalary = document.getElementById('annualSalary').value;
 console.log("salary:", annualSalary);
 //add employee to array
 newEmp(firstName, lastName, empId, jobTitle, annualSalary);
+document.getElementById("output").innerHTML=("Name: " + firstName + " " + lastName + " ID #: " + empId + "  Job Title: " + jobTitle + "  Salary: $" + annualSalary);
 };
 
 function resetForm() {
-document.getElementById("myForm").reset();
+document.getElementById("empInfoForm").reset();
+}
+
+var monthlySalaryTotal = function(){
+  
 }
