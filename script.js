@@ -28,3 +28,7 @@ console.log("salary:", annualSalary);
 //add employee to array
 newEmp(firstName, lastName, empId, jobTitle, annualSalary);
 };
+
+function resetForm() {
+document.getElementById("myForm").reset();
+}
