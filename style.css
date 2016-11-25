@@ -1,0 +1,17 @@
+body {
+  background-color: #FFFAF0;
+}
+
+h2 {
+  font: Arial;
+  font-weight: normal;
+  color: #191970;
+}
+
+input {
+  width: 10%;
+     padding: 8px 20px;
+     margin: 8px 0;
+     border: 2px solid gray;
+     border-radius: 2px;
+}

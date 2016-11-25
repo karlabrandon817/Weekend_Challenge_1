@@ -15,11 +15,12 @@ console.log("salary:", annualSalary);
 newEmp=[firstName, lastName, empId, jobTitle, annualSalary];
 console.log(newEmp);
 employeeArray.push(newEmp);
-document.getElementById("output").innerHTML+=("Name: " + firstName + " " + lastName + " ID #: " + empId + "  Job Title: " + jobTitle + "  Salary: $" + annualSalary);
+document.getElementById("output").innerHTML+=("First Name:  " + firstName + " " + lastName + " " + "Employee ID#:  " + empId + " " + jobTitle + " " + annualSalary);
 linebreak = document.createElement("br");
 output.appendChild(linebreak);
   document.getElementById("monthlySalary").innerHTML = ("Montly Salary Total:" + " " + monthlySalaryTotal());
 };
+
 
 
 function resetForm() {
