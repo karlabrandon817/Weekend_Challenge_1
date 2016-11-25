@@ -1,17 +1,5 @@
 var employeeArray = [];
 
-var newEmp = function (first, last, id, title, salary){
-  var addEmpInfo = {
-    first: first,
-    last: last,
-    id: id,
-    title: title,
-    salary: salary};
-  employeeArray.push(addEmpInfo);
-  console.log(employeeArray);
-};
-
-
 var userInput = function () {
 var firstName = document.getElementById('firstName').value;
 console.log("first name:", firstName);
@@ -24,7 +12,9 @@ console.log("job title:", jobTitle);
 var annualSalary = document.getElementById('annualSalary').value;
 console.log("salary:", annualSalary);
 //add employee to array
-newEmp(firstName, lastName, empId, jobTitle, annualSalary);
+newEmp=[firstName, lastName, empId, jobTitle, annualSalary];
+console.log(newEmp);
+employeeArray.push(newEmp)
 document.getElementById("output").innerHTML=("Name: " + firstName + " " + lastName + " ID #: " + empId + "  Job Title: " + jobTitle + "  Salary: $" + annualSalary);
 };
 
@@ -32,6 +22,11 @@ function resetForm() {
 document.getElementById("empInfoForm").reset();
 }
 
-var monthlySalaryTotal = function(){
-  
+//function for monthly cost of salaries
+var monthlySalaryTotal = function () {
+  var salariesTotal = 0;
+  for (var i = 0; i < employeeArray.length; i++){
+  salariesTotal += Number(employeeArray[i][4]);
 }
+  return salariesTotal/12;
+};
