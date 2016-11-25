@@ -18,6 +18,7 @@ employeeArray.push(newEmp);
 document.getElementById("output").innerHTML+=("Name: " + firstName + " " + lastName + " ID #: " + empId + "  Job Title: " + jobTitle + "  Salary: $" + annualSalary);
 linebreak = document.createElement("br");
 output.appendChild(linebreak);
+  document.getElementById("monthlySalary").innerHTML = ("Montly Salary Total:" + " " + monthlySalaryTotal());
 };
 
 
@@ -32,4 +33,5 @@ var monthlySalaryTotal = function () {
   salariesTotal += Number(employeeArray[i][4]);
 }
   return salariesTotal/12;
+
 };
