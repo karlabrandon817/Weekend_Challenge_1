@@ -22,7 +22,7 @@ employeeArray.push(newEmp);
 document.getElementById("allEmployees").innerHTML+=("<tr><td>"+ firstName +"</td><td>" + lastName + "</td><td>"+ empId + "</td><td>" + jobTitle + "</td><td>" + annualSalary +"</td></tr>");
 linebreak = document.createElement("br");
 allEmployees.appendChild(linebreak);
-  document.getElementById("monthlySalary").innerHTML = ("Montly Salary Total:" + " " + monthlySalaryTotal());
+  document.getElementById("monthlySalary").innerHTML = ("Montly Salary Total: $" + monthlySalaryTotal());
 };
 
 

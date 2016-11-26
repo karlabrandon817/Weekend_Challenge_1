@@ -1,24 +1,22 @@
 body {
-  background-color: #FFFAF0;
+  background-color: #F8F8FF ;
 }
 
 h2 {
   font-family: Arial, sans-serif;
-  font-weight: normal;
-  color: #191970;
+  color: #;
 }
 
 #monthlySalary {
   font-family: Arial, sans-serif;
   font-weight: lighter;
-  color: #191970;
 }
 
 input {
   width: 10%;
      padding: 8px 20px;
      margin: 8px 0;
-     border: 2px solid #ddd;
+     border: 2px solid #708090;
      border-radius: 2px;
 }
 
@@ -28,13 +26,22 @@ th {
     font-family: Arial, sans-serif;
     height: 20px;
     text-align: left;
+    color: #;
 }
 
 td {
   font-family: Arial, sans-serif;
   font-size: 14px;
+  color: #696969;
 }
 
 table {
   width: 50%;
+}
+
+#submitButton {
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-size: 10px;
 }
