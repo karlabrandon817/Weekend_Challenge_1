@@ -15,3 +15,11 @@ input {
      border: 2px solid gray;
      border-radius: 2px;
 }
+
+#firstName {
+  padding: 10px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
