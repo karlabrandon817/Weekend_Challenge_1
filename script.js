@@ -19,11 +19,11 @@ employeeArray.push(newEmp);
 
 
 //add new employee info to DOM
-document.getElementById("allEmployees").innerHTML+=("<tr><td>"+ firstName +"</td><td>" + lastName + "</td><td>"+ empId + "</td><td>" + jobTitle + "</td><td>" + annualSalary +"</td></tr>");
-linebreak = document.createElement("br");
-allEmployees.appendChild(linebreak);
-  document.getElementById("monthlySalary").innerHTML = ("Montly Salary Total: $" + monthlySalaryTotal());
+document.getElementById("allEmployees").innerHTML+=("<tr><td>"+ firstName +"</td><td>" + lastName + "</td><td>"+ empId + "</td><td>" + jobTitle + "</td><td>" +
+annualSalary +"</tr></td>");
+
 };
+
 
 
 //reset form with 'submit' button click
@@ -40,3 +40,5 @@ var monthlySalaryTotal = function () {
   return salariesTotal/12;
 
 };
+
+//delete button
