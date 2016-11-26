@@ -3,8 +3,14 @@ body {
 }
 
 h2 {
-  font: Arial;
+  font-family: Arial, sans-serif;
   font-weight: normal;
+  color: #191970;
+}
+
+#monthlySalary {
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
   color: #191970;
 }
 
@@ -12,14 +18,23 @@ input {
   width: 10%;
      padding: 8px 20px;
      margin: 8px 0;
-     border: 2px solid gray;
+     border: 2px solid #ddd;
      border-radius: 2px;
 }
 
-#firstName {
-  padding: 10px;
+
+th {
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    height: 20px;
+    text-align: left;
 }
 
-th, td {
-    border-bottom: 1px solid #ddd;
+td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+table {
+  width: 50%;
 }
