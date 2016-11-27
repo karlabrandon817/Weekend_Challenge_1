@@ -24,10 +24,9 @@ annualSalary +"</tr></td>");
 
 linebreak = document.createElement("br");
 monthlySalary.appendChild(linebreak);
-  document.getElementById("monthlySalary").innerHTML = ("Montly Salary Total: $" + monthlySalaryTotal().toLocaleString());
+  document.getElementById("monthlySalary").innerHTML = ("Montly Salary Total: $" + Math.round(monthlySalaryTotal()*100)/100);
+
 };
-
-
 
 
 
