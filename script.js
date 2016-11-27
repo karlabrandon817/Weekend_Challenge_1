@@ -28,8 +28,6 @@ monthlySalary.appendChild(linebreak);
 
 };
 
-
-
 //reset form with 'submit' button click
 function resetForm() {
 document.getElementById("empInfoForm").reset();
@@ -42,7 +40,6 @@ var monthlySalaryTotal = function () {
   salariesTotal += Number(employeeArray[i][4]);
 }
   return salariesTotal/12;
-
 };
 
 //delete button
