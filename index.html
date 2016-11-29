@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <script src="script.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript"></script>
     <title></title>
-  </head>
-  <body>
+</head>
+
+<body>
     <h2>Add New Employee</h2>
     <form id="empInfoForm">
-      <input type="text" id="firstName" placeholder="First Name">
-      <input type="text" id="lastName" placeholder="Last Name">
-      <input type="number" id="empId" placeholder="Employee ID #">
-      <input type="text" id="jobTitle" placeholder="Job Title">
-      <input type="number" id="annualSalary" placeholder="Annual Salary">
-      <button type="button" name="button" id="submitButton" onclick="userInput();resetForm()">Add Employee</button>
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+        <input type="number" id="empId" placeholder="Employee ID #">
+        <input type="text" id="jobTitle" placeholder="Job Title">
+        <input type="number" id="annualSalary" placeholder="Annual Salary">
+        <button type="button" name="button" id="submitButton" onclick="userInput();resetForm()">Add Employee</button>
     </form>
 
     <table id="allEmployees">
-      <h2>All Employees</h2>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Employee ID#</th>
-        <th>Job Title</th>
-        <th>Annual Salary</th>
-      </tr>
+        <h2>All Employees</h2>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Employee ID#</th>
+            <th>Job Title</th>
+            <th>Annual Salary</th>
+        </tr>
     </table>
     <div>
-      <h4 id="monthlySalary"></h4>
+        <h4 id="monthlySalary"></h4>
     </div>
 
-  </body>
+</body>
+
 </html>
