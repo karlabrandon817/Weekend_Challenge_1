@@ -21,7 +21,7 @@ $(document).ready(function(){
     $('#empInfoForm').find('input').val('');//clear form after submit
     var outputText = '';
     for(var i = 0; i < employeeArray.length; i++){
-    outputText = ("<tr><td>" + employeeArray[i][0] + "</td><td>" + employeeArray[i][1] + "</td><td>" + employeeArray[i][2] + "</td><td>" + employeeArray[i][3] + "</td><td>" +
+    outputText = ("<tr><td>" + employeeArray[i][0] + "</td><td>" + employeeArray[i][1] + "</td><td class='id'>" + employeeArray[i][2] + "</td><td>" + employeeArray[i][3] + "</td><td>" +
     employeeArray[i][4] + "</td><td>" + '<button class="deleteEmployeeButton">Delete</button>' + "</td></tr>");
 
     monthlySalaryTotal();
@@ -43,7 +43,19 @@ $(document).ready(function(){
 
   $('#allEmployees').on('click', '.deleteEmployeeButton', function(){
     $(this).parent().parent().remove();
-  });
+    var id = $(this).closest('tr').find('.id').html();
+    for (var i = 0; i < employeeArray.length; i++) {
+    if (employeeArray[i][2] === id) {
+      var index = employeeArray.indexOf(employeeArray[i]);
+      if (index > -1) {
+          employeeArray.splice(index, 1);
+        }
+      }
+    }//end for loop
+    //recalculate monthlySalaryTotal and update DOM
+    monthlySalaryTotal();
+    $('#monthlySalary').html("Montly Salary Total: " + Math.round((monthlySalaryTotal() * 100) / 100).toLocaleString('en-US', { style: 'currency', currency: 'USD' }));
+  });//end deleteEmployee onClick function
 
 
 

@@ -24,4 +24,8 @@ Finally, logic calculates all of the employee salaries and reports back the mont
 
 *** Hard Mode ***
 -----------------
-[] Delete button removes employee from the DOM. Note that in hard mode, it need not remove that employee's salary from the reported total.
+[x] Delete button removes employee from the DOM. Note that in hard mode, it need not remove that employee's salary from the reported total.
+
+*** Pro Mode ***
+-----------------
+[x]Once the employee is deleted, also update the total spend on salaries to discount the removed employee's salary. This will require that the logic knows which element was removed. 
