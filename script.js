@@ -28,7 +28,7 @@ $(document).ready(function(){
   }//end for loop
 
     $('#allEmployees').append(outputText);
-    $('#monthlySalary').html("Montly Salary Total: " + Math.round((monthlySalaryTotal() * 100) / 100).toLocaleString('en-US', { style: 'currency', currency: 'USD' }));
+    $('#monthlySalary').html("Montly Salary Total: " + (monthlySalaryTotal().toLocaleString('en-US', { style: 'currency', currency: 'USD' })));
   });//end submitButton onClick function
 
 
@@ -54,7 +54,7 @@ $(document).ready(function(){
     }//end for loop
     //recalculate monthlySalaryTotal and update DOM
     monthlySalaryTotal();
-    $('#monthlySalary').html("Montly Salary Total: " + Math.round((monthlySalaryTotal() * 100) / 100).toLocaleString('en-US', { style: 'currency', currency: 'USD' }));
+    $('#monthlySalary').html("Montly Salary Total: " + (monthlySalaryTotal().toLocaleString('en-US', { style: 'currency', currency: 'USD' })));
   });//end deleteEmployee onClick function
 
 
