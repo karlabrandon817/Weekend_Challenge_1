@@ -1,18 +1,23 @@
 Weekend Challenge 1
-For your weekend challenge, you will need to create an application that records employees along with their salary. We also want to add the salaries up so we know how much we’re spending each month.
+===================
 
-The application should first have an input form that collects the following:
+Technologies Used
+-----------------
+* HTML
+* CSS
+* JavaScript/jQuery
 
-Employee First Name
+Assignment Details
+------------------
+For my first weekend challenge, I created an application that records employee information along with each employee's salary. This application adds up the salaries to find out the monthly total.
 
-Employee Last Name
+First, the application has an input form that collects the following information:
+  * Employee First Name
+  * Employee Last Name
+  * ID Number
+  * Job Title
+  * Annual Salary
 
-ID Number
+A 'Submit' button clears out the inputs and logic stores the information. The employee information is then appended to the DOM so the user of the application can see the information entered.
 
-Job Title
-
-Annual Salary
-
-A 'Submit' button should clear out the inputs and your logic should store that information. Then, that information should be appended to the DOM so the user of the application can see the information they just entered.
-
-Finally, your logic should calculate all of the employee salaries and report back the Monthly cost of salaries.
+Finally, logic calculates all of the employee salaries and reports back the monthly cost of salaries.
