@@ -21,3 +21,7 @@ First, the application has an input form that collects the following information
 A 'Submit' button clears out the inputs and logic stores the information. The employee information is then appended to the DOM so the user of the application can see the information entered.
 
 Finally, logic calculates all of the employee salaries and reports back the monthly cost of salaries.
+
+*** Hard Mode ***
+-----------------
+[] Delete button removes employee from the DOM. Note that in hard mode, it need not remove that employee's salary from the reported total.
