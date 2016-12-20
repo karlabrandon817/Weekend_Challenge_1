@@ -7,11 +7,6 @@ h2 {
     color: #;
 }
 
-#monthlySalary {
-    font-family: Arial, sans-serif;
-    font-weight: lighter;
-}
-
 input {
     width: 10%;
     padding: 8px 20px;
@@ -38,9 +33,35 @@ table {
     width: 50%;
 }
 
+#addEmployee{
+  margin-bottom: 2px;
+}
+
+#allEmployees {
+  margin-top: -10px;
+}
+
+#listOfEmployees{
+  padding-top: 15px;
+}
+
+#monthlySalary {
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+}
+
 #submitButton {
-    border-radius: 4px;
-    background-color: white;
+    border-radius: 5px;
     color: black;
-    font-size: 10px;
+    font-size: 12px;
+    background-color: white;
+    opacity: 0.8;
+    vertical-align: middle;
+}
+
+.deleteEmployeeButton {
+  background-color: #FF7260;
+  font-weight: bold;
+  opacity: .75;
+  border-radius: 5px;
 }
