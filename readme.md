@@ -28,4 +28,4 @@ Finally, logic calculates all of the employee salaries and reports back the mont
 
 *** Pro Mode ***
 -----------------
-[x]Once the employee is deleted, also update the total spend on salaries to discount the removed employee's salary. This will require that the logic knows which element was removed. 
+[x]Once the employee is deleted, also update the total monthly salaries to discount the removed employee's salary. This will require that the logic knows which element was removed. 
