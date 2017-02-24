@@ -14,7 +14,6 @@ $(document).ready(function(){
     employeeArray.push(newEmp);
   };//end userInput function
 
-
   //add new employee info to DOM
   $('#submitButton').on('click', function(){
     userInput();
@@ -56,7 +55,4 @@ $(document).ready(function(){
     monthlySalaryTotal();
     $('#monthlySalary').html("Montly Salary Total: " + (monthlySalaryTotal().toLocaleString('en-US', { style: 'currency', currency: 'USD' })));
   });//end deleteEmployee onClick function
-
-
-
 });//end doc ready
